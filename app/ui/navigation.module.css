@@ -1,0 +1,22 @@
+.navigationContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 30%;
+}
+
+.routePath {
+  font-weight: lighter;
+  text-shadow: 2px 2px 4px var(--secondaryText);
+}
+
+.routePath:hover {
+  color: var(--secondaryText);
+  font-weight: bold;
+}
+
+.currentPath {
+  color: var(--secondaryText);
+  font-weight: bold;
+  text-decoration: underline;
+}
