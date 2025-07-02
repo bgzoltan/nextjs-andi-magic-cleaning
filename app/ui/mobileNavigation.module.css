@@ -1,0 +1,10 @@
+.horizontalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  align-items: start;
+  background-color: var(--primaryBackgroundLight);
+  border: 0rem;
+}
+

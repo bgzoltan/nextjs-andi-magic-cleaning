@@ -7,16 +7,38 @@
 
 .routePath {
   font-weight: lighter;
-  text-shadow: 2px 2px 4px var(--secondaryText);
+  text-shadow: 2px 2px 4px var(--secondaryTextLight);
 }
 
 .routePath:hover {
-  color: var(--secondaryText);
+  color: var(--secondaryTextDark);
   font-weight: bold;
 }
 
 .currentPath {
-  color: var(--secondaryText);
+  color: var(--secondaryTextDark);
   font-weight: bold;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .navigationContainer {
+    position: absolute;
+    top: 2.5rem;
+    left: 15%;
+    width: 70%;
+    opacity: 95%;
+    background-color: var(--primaryBackgroundLight);
+    border-top: 2px solid var(--primaryText);
+  }
+
+  .routePath {
+    padding-top: 0.5rem;
+    border-bottom: 0.1px solid var(--primaryText);
+  }
+
+    .currentPath {
+    padding-top: 0.5rem;
+    text-decoration:none ;
+  }
 }

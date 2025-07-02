@@ -1,9 +1,11 @@
 :root {
   --primaryBackgroundLight: #e87fc9;
   --primaryBackgroundDark: #a43e7f;
-  --secondaryBackground: beige;
-  --primaryText: beige;
-  --secondaryText: #623954;
+  --secondaryBackground: white;
+  --primaryText: white;
+  --secondaryText: #E349C2;
+  --secondaryTextLight: #936885;
+  --secondaryTextDark: #623954;
   --highlightedText: yellow;
 }
 

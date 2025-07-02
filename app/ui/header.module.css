@@ -3,10 +3,10 @@
   grid-template-columns: 1fr 1fr 2fr;
   width: 100%;
   height: 15rem;
-  background-color: var(--primaryBackgroundLight)
+  background-color: var(--primaryBackgroundLight);
 }
 
-.horizontalContainer{
+.horizontalContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,32 +27,87 @@
 .title {
   font-size: 2.5rem;
   text-align: center;
-  text-shadow: 2px 2px 4px  var(--secondaryText);
+  text-shadow: 2px 2px 4px var(--secondaryTextDark);
 }
 
 .subTitle {
   font-size: xx-large;
   color: var(--highlightedText);
   text-align: center;
-    text-shadow: 2px 2px 4px var(--secondaryText);
+  text-shadow: 2px 2px 4px var(--secondaryTextDark);
 }
 
 .phone {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--secondaryText);
+  color: var(--secondaryTextDark);
   font-size: medium;
   padding-right: 3rem;
   width: 70%;
-    text-shadow:
-    -1px -1px 0 var(--secondaryText),  
-    1px -1px 0 var(--secondaryText),   
-    -1px 1px 0 var(--secondaryText),   
-    1px 1px 0 var(--secondaryText),    
+    text-shadow: 1px 1px 2px var(--secondaryTextLight);
 }
 
 .phoneIcon {
   padding-right: 0.5rem;
+   filter: drop-shadow(2px 2px 1px var(--secondaryTextDark))
 }
 
+.largeScreen {
+  display: block;
+}
+
+.mobileScreen {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .largeScreen {
+    display: none;
+  }
+
+  .mobileScreen {
+    display: block;
+  }
+
+  .container {
+    grid-template-columns: 2fr 8fr 2fr;
+    width: 100%;
+    height: auto;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+  }
+
+  .horizontalContainer {
+    cursor: pointer;
+    align-items: start;
+    background-color: var(--primaryBackgroundLight);
+  }
+
+  .verticalContainer {
+    justify-content: flex-start;
+
+  }
+
+  .title {
+        padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 1.2rem;
+  }
+
+  .subTitle {
+        padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 1.2rem;
+  }
+
+  .phone {
+    font-size: medium;
+    padding-top: 0.2rem;
+    padding-right: 0rem;
+    text-align: center;
+    text-shadow: none;
+  }
+
+}

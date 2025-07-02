@@ -27,7 +27,7 @@
   color: var(--primaryText);
   font-size: xx-large;
   text-align: center;
-  text-shadow: 2px 2px 4px (--secondaryText);
+  text-shadow: 2px 2px 4px (--secondaryTextDark);
 }
 
 .highlightedText {
@@ -63,4 +63,64 @@
 
 .copyright {
   font-size: small;
+}
+
+.largeScreen {
+  display: block;
+}
+
+.mobileScreen {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .largeScreen {
+    display: none;
+  }
+
+  .mobileScreen {
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--primaryBackgroundDark);
+  }
+
+  .verticalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .horizontalContainer {
+    font-size: small;
+  }
+
+  .highlightedText {
+    font-size: large;
+    color: var(--highlightedText);
+    text-align: center;
+    text-shadow: 2px 2px 4px (--highlightedText);
+  }
+
+  .text {
+    color: var(--primaryText);
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 4px (--secondaryTextDark);
+  }
+
+  .copyright {
+    font-size:x-small;
+  }
 }
