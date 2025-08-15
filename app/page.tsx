@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import { ContactProcessSection } from "./ui/home/contactProcess";
-import { rubikGlitchFont, rudaFont } from "@/app/layout";
+import { rudaFont } from "@/app/layout";
 import { ReviewsSections } from "./ui/home/reviews";
 import { ServicesSection } from "./ui/home/services";
 import { ServicesDetailsSection } from "./ui/home/servicesDetails";

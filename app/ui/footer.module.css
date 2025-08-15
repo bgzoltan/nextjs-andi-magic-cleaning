@@ -32,7 +32,7 @@
 
 .highlightedText {
   font-size: xx-large;
-  color: var(--highlightedText);
+  color: var(--secondaryBackgroundDark);
   text-align: center;
   text-shadow: 2px 2px 4px (--highlightedText);
 }

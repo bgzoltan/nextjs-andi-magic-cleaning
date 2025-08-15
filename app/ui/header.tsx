@@ -1,7 +1,6 @@
 import Image from "next/image";
 import style from "./header.module.css";
 import { FiPhone } from "react-icons/fi";
-
 import { rubikGlitchFont } from "../layout";
 import { Navigation } from "./navigation";
 import { MobileNavigation } from "./mobileNavigation";
@@ -33,7 +32,7 @@ export const Header = () => {
               <div className={style.phoneIcon}>
                 <FiPhone size={24} />
               </div>
-              +61 481 764 707
+              +61-481-764-707
             </div>
             <Navigation />
           </div>
@@ -57,7 +56,7 @@ export const Header = () => {
             <div className={style.title}>Andi Magic Cleaning</div>
             <div className={style.subTitle}>Gold Coast</div>
             <div className={`${style.phone} ${rubikGlitchFont.className}`}>
-              +61 481 764 707
+              +61-481-764-707
             </div>
           </div>
           <MobileNavigation />

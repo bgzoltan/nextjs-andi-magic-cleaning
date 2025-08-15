@@ -1,23 +1,18 @@
 "use client";
 import { useState } from "react";
-// import { rubikGlitchFont, rudaFont } from "@/app/layout";
 import style from "./reviews.module.css";
 import { FaStar } from "react-icons/fa";
+import { NextFont } from "next/dist/compiled/@next/font";
+import { useListReviews } from "@/app/hooks/hooks";
+
 
 interface ReviewItems {
-  reviews: {
-    client: string;
-    serviceType: string;
-    date: string;
-    address: string;
-    shortDescription: string;
-    evaluation: number;
-    button: string;
-    link: string;
-  }[];
+  rudaFont:NextFont;
+  rubikGlitchFont: NextFont;
 }
 
-export const ReviewItems = ({ reviews }: ReviewItems) => {
+export const ReviewItems = ({ rudaFont, rubikGlitchFont }: ReviewItems) => {
+    const {reviews} = useListReviews();
   const [startReview, setStartReview] = useState(0);
 
   const nextReview = () => {
@@ -29,24 +24,24 @@ export const ReviewItems = ({ reviews }: ReviewItems) => {
   };
 
   return (
-    <>
-      <button onClick={() => previousReview()}>{"<"}</button>
+    <div className={style.cardsContainer}>
+      <button className={`primaryButton`} onClick={() => previousReview()}>{"<"}</button>
       {reviews.slice(startReview, startReview+4).map((review) => (
-        <div className={style.subContainer} key={review.client}>
-          <div className={`${style.client}  `}>{review.client}</div>
-          <div className={`${style.serviceType}  `}>{review.serviceType}</div>
+        <div className={style.card} key={review.client}>
+          <div className={`${style.cardTitle}  ${rubikGlitchFont.className}`}>{review.client}</div>
+          <div className={`${style.serviceType}  `}><b>{`${review.serviceType} CLEANING`}</b></div>
           <div className={`${style.serviceType}  `}>
             {new Array(review.evaluation).fill(
-              <FaStar size="18" style={{ color: "yellow" }} />
+              <FaStar size="18" className={ style.stars} />
             )}
           </div>
-          <div className={style.descriptionText}>{review.shortDescription}</div>
+          <div className={style.cardText}>{review.shortDescription}</div>
           <div className={style.buttonContainer}>
-            <button className={`primaryButton  `}>{review.button}</button>
+            <button className={`primaryButton ${rudaFont.className}`}>{review.button}</button>
           </div>
         </div>
       ))}
-      <button onClick={() => nextReview()}>{">"}</button>
-    </>
+      <button className={`primaryButton`} onClick={() => nextReview()}>{">"}</button>
+    </div>
   );
 };

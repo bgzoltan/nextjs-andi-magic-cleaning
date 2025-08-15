@@ -1,18 +1,39 @@
 "use client";
-import axios from 'axios'
-import { useEffect, useState } from "react";
 import style from "./reviews.module.css";
-import { Review } from "../api/reviews/route";
-import useReviews from '../hooks/hooks';
+import { useListReviews, addReview } from "../hooks/hooks";
+import { ReviewResponse } from "../db/schema";
 
 export default function Page() {
-  const reviews:Review[]=useReviews();
+  // try {
+  //   addReview({
+  //     client: "Mathew",
+  //     serviceType: ServiceType.HOME,
+  //     date: "2024, 2025",
+  //     address: "Surfers Paradise",
+  //     shortDescription: "Excellent cleaning service.",
+  //     evaluation: 5,
+  //     button: "Get more...",
+  //     link: "",
+  //   });
+  // } catch (err: any) {
+  //   return <>{`${err.message}`}</>;
+  // }
+
+  const { error, reviews, loading }: ReviewResponse = useListReviews();
 
   return (
-    <ul className={style.container}>
-      {reviews.map((item) => (
-        <li key={item.client}>{item.client} </li>
-      ))}
-    </ul>
+    <>
+      {loading == true && <p>Loading...</p>}
+      <div className={style.container}>
+        {reviews.map((item) => (
+          <div className={style.card}>
+            <p key={item.client}>{item.client}</p>
+            <p key={item.client}>{item.serviceType}</p>
+            <p key={item.client}>{item.shortDescription}</p>
+          </div>
+        ))}
+      </div>
+      {error && <p>{error}</p>}
+    </>
   );
 }

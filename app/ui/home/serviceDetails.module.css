@@ -1,15 +1,30 @@
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  /* width: 100%; */
   height: auto;
   padding: 1rem;
   background-color: var(--secondaryBackground);
 }
 
-.subContainer {
+.sectionTitle {
+  color: var(--secondaryTextDark);
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--secondaryBackground);
+}
+
+.card {
   display: grid;
   grid-template-rows: 1fr 2.2fr 1fr;
   align-items: center;
@@ -19,27 +34,20 @@
   text-align: center;
   width: 12rem;
   border-radius: 0.5rem 0.5rem 0rem 0.5rem;
-  background-color: var(--primaryBackgroundDark);
+  background-color: var(--secondaryTextDark);
 }
 
-.middleContainer {
-  border-right: 1px solid var(--primaryBackgroundLight);
-  border-left: 1px solid var(--primaryBackgroundLight);
-}
-
-.title {
+.cardTitle {
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
-  text-shadow: 2px 2px 4px var(--secondaryTextDark);
 }
 
-.descriptionText {
+.cardText {
   width: 100%;
   padding-top: 0.5rem;
   font-size: middle;
   text-align: center;
-  text-shadow: 2px 2px 4px var(--secondaryTextDark);
 }
 
 .buttonContainer {
@@ -47,13 +55,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container {
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+  .cardsContainer {
     display: flex;
-      flex-direction: column;
-    justify-content: center;
+    flex-direction: column;
   }
 
-  .subContainer {
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,18 +72,15 @@
     margin: 0.2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: var(--primaryText);
   }
 
-  .title {
+  .cardTitle {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
   }
 
-  .servicesText {
+  .cardText {
     font-size: small;
-    text-align: left;
-    text-shadow: 2px 2px 4px var(--secondaryTextDark);
   }
 }

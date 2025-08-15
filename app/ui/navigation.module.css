@@ -6,19 +6,23 @@
 }
 
 .routePath {
-  font-weight: lighter;
-  text-shadow: 2px 2px 4px var(--secondaryTextLight);
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--primaryText);
+  text-shadow: 2px 2px 2px var(--secondaryTextDark);
 }
 
 .routePath:hover {
-  color: var(--secondaryTextDark);
+  color: var(--highlightedText);
   font-weight: bold;
+  font-size: large;
 }
 
 .currentPath {
-  color: var(--secondaryTextDark);
+  color: var(--highlightedText);
   font-weight: bold;
   text-decoration: underline;
+   text-shadow: 2px 2px 2px var(--secondaryTextDark);
 }
 
 @media screen and (max-width: 600px) {

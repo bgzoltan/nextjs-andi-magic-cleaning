@@ -1,14 +1,13 @@
-
 :root {
   --primaryBackgroundLight: #e87fc9;
   --primaryBackgroundDark: #a43e7f;
   --secondaryBackground: white;
-  --secondaryBackgroundDark: #fdabd7;
+  --secondaryBackgroundDark: #f7c4df;
   --primaryText: white;
   --secondaryText: #e349c2;
   --secondaryTextLight: #936885;
   --secondaryTextDark: #623954;
-  --highlightedText: yellow;
+  --highlightedText: #f7c4df;
 }
 
 html,
@@ -47,8 +46,14 @@ a {
   background-color: var(--secondaryTextDark);
   padding: 0.5rem;
   margin: 0.5rem;
-  border: 1px solid var(--primaryTextColor);
+  border: 1px solid var(--primaryText);
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-  font-size:medium;
+  font-size: medium;
   cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: var(--primaryText);
+  color: var(--secondaryTextDark);
+  border: 1px solid var(--secondaryTextDark);
 }

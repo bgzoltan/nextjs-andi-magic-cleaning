@@ -4,7 +4,7 @@
   justify-content: center;
   cursor: pointer;
   align-items: start;
-  background-color: var(--primaryBackgroundLight);
+  background-color: var(--primaryBackgroundDark);
   border: 0rem;
 }
 

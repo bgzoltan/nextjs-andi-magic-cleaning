@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 2fr;
   width: 100%;
   height: 15rem;
-  background-color: var(--primaryBackgroundLight);
+  background-color: var(--primaryBackgroundDark);
 }
 
 .horizontalContainer {
@@ -27,30 +27,31 @@
 .title {
   font-size: 2.5rem;
   text-align: center;
-  text-shadow: 2px 2px 4px var(--secondaryTextDark);
+  color: var(--primaryText);
+  text-shadow: 2px 2px 2px var(--secondaryTextDark);
 }
 
 .subTitle {
-  font-size: xx-large;
+  font-size: 2.5rem;
   color: var(--highlightedText);
   text-align: center;
-  text-shadow: 2px 2px 4px var(--secondaryTextDark);
+  text-shadow: 2px 2px 2px var(--secondaryTextDark);
 }
 
 .phone {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--secondaryTextDark);
-  font-size: medium;
+  color: var(--highlightedText);
+  text-shadow: 2px 2px 2px var(--secondaryTextDark);
+  font-size: 2rem;
   padding-right: 3rem;
   width: 70%;
-    text-shadow: 1px 1px 2px var(--secondaryTextLight);
 }
 
 .phoneIcon {
   padding-right: 0.5rem;
-   filter: drop-shadow(2px 2px 1px var(--secondaryTextDark))
+  filter: drop-shadow(2px 2px 1px var(--secondaryTextDark));
 }
 
 .largeScreen {
@@ -82,32 +83,63 @@
   .horizontalContainer {
     cursor: pointer;
     align-items: start;
-    background-color: var(--primaryBackgroundLight);
   }
 
   .verticalContainer {
     justify-content: flex-start;
-
   }
 
   .title {
-        padding-top: 0.2rem;
+    padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .subTitle {
-        padding-top: 0.2rem;
+    padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .phone {
-    font-size: medium;
+    font-size: 1.1rem;
     padding-top: 0.2rem;
     padding-right: 0rem;
     text-align: center;
     text-shadow: none;
   }
+}
 
+@media screen and (max-width: 820px) {
+  .largeScreen {
+    display: none;
+  }
+
+  .mobileScreen {
+    display: block;
+  }
+  .container {
+    grid-template-columns: 2fr 8fr 2fr;
+    width: 100%;
+    height: auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+  }
+
+   .title {
+    font-size: 1.7rem;
+  }
+
+  .subTitle {
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
+  }
+
+  .phone {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+    padding-right: 0rem;
+    text-align: center;
+  }
 }

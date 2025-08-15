@@ -7,32 +7,36 @@ export const ServicesSection = () => {
       <div
         className={`${style.subContainer} ${rubikGlitchFont.className} ${style.title}`}
       >
-        What I do
+        I can do
       </div>
-      
-      <div
-        className={`${style.subContainer} ${style.middleContainer} ${style.servicesText} ${rudaFont.className}`}
-      >
-        <p>Vacuuming</p>
-        <p>Moping</p>
-        <p>Wall and door washing</p>
-        <p>Window cleaning</p>
-        <p>Carpet cleaning</p>
-        <p>Oven interior cleaning</p>
-        <p>Anti-mould treatment</p>
-        <p>Disinfecting floors</p>
-      </div>
+<div className={style.subContainer}>
+
 
       <div
-        className={`${style.subContainer}  ${style.servicesText} ${rudaFont.className}`}
+        className={`${style.card} ${style.leftCard} ${style.servicesText} ${rudaFont.className}`}
       >
-        <p>in:</p>
-        <p>STANDARD ROOMS</p>
-        <p>KITCHENS</p>
-        <p>BATHROOMS</p>
-        <p>SHOWERS & BATHS</p>
-        <p>TOILETS</p>
-        <p>BALCONIES</p>
+        <p>vacuuming</p>
+        <p>moping</p>
+        <p>wall and door washing</p>
+        <p>window cleaning</p>
+        <p>carpet cleaning</p>
+        <p>oven interior cleaning</p>
+        <p>fridge interior cleaning</p>
+        <p>anti-mould treatment</p>
+        <p>floor disinfecting</p>
+      </div>
+      <div  className={`${style.card}  ${style.servicesText} ${rudaFont.className} ${style.inCard}`}>in</div>
+
+      <div
+        className={`${style.card}  ${style.servicesText} ${rudaFont.className} ${style.rightCard}`}
+      >
+        <p>rooms</p>
+        <p>kitchens</p>
+        <p>bathrooms</p>
+        <p>toilets</p>
+        <p>balconies</p>
+        <p>garages</p>
+      </div>
       </div>
     </section>
   );

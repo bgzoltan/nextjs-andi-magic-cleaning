@@ -1,16 +1,14 @@
-'use client'
-
 import style from "./reviews.module.css";
-import { FaStar } from "react-icons/fa";
 import { ReviewItems } from "./reviewItems";
-import useReviews from "@/app/hooks/hooks";
+import { rubikGlitchFont, rudaFont } from "@/app/layout";
 
 export const ReviewsSections = () => {
-   const reviews=useReviews()
-
   return (
     <section className={`${style.container}`}>
-      <ReviewItems reviews={reviews} />
+      <div className={`${style.sectionTitle} ${rubikGlitchFont.className}`}>
+        Customer reviews
+      </div>
+      <ReviewItems rudaFont={rudaFont} rubikGlitchFont={rubikGlitchFont} />
     </section>
   );
 };

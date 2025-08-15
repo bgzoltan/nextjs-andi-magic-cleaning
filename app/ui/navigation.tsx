@@ -13,23 +13,23 @@ export const Navigation = ({showNavigation}:NavigationProps) => {
   const routing = [
     {
       path: "/",
-      name: "Home",
+      name: "HOME",
     },
     {
       path: "/about",
-      name: "About me",
+      name: "ABOUT ME",
     },
     {
       path: "/services",
-      name: "Services",
+      name: "SERVICES",
     },
     {
       path: "/reviews",
-      name: "Reviews",
+      name: "REVIEWS",
     },
     {
       path: "/contact",
-      name: "Contact",
+      name: "CONTACT",
     },
   ];
 
