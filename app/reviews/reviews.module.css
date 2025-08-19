@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--primaryText);
+  color: var(--primary);
 }
 
 .card {
@@ -14,5 +14,5 @@
   height: 20rem;
   padding: 1rem;
   border-radius: 0.5rem 0.5rem 0rem 0.5rem;
-  background-color: var(--primaryBackgroundDark);
+  background-color: var(--primaryBgDark);
 }

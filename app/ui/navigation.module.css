@@ -8,21 +8,21 @@
 .routePath {
   cursor: pointer;
   font-weight: bold;
-  color: var(--primaryText);
-  text-shadow: 2px 2px 2px var(--secondaryTextDark);
+  color: var(--primary);
+  text-shadow: 2px 2px 2px var(--secondaryDark);
 }
 
 .routePath:hover {
-  color: var(--highlightedText);
+  color: var(--highLighted);
   font-weight: bold;
   font-size: large;
 }
 
 .currentPath {
-  color: var(--highlightedText);
+  color: var(--highLighted);
   font-weight: bold;
   text-decoration: underline;
-   text-shadow: 2px 2px 2px var(--secondaryTextDark);
+   text-shadow: 2px 2px 2px var(--secondaryDark);
 }
 
 @media screen and (max-width: 600px) {
@@ -32,13 +32,13 @@
     left: 15%;
     width: 70%;
     opacity: 95%;
-    background-color: var(--primaryBackgroundLight);
-    border-top: 2px solid var(--primaryText);
+    background-color: var(--primaryBg);
+    border-top: 2px solid var(--primary);
   }
 
   .routePath {
     padding-top: 0.5rem;
-    border-bottom: 0.1px solid var(--primaryText);
+    border-bottom: 0.1px solid var(--primary);
   }
 
     .currentPath {

@@ -4,11 +4,11 @@
   align-items: center;
   height: auto;
   padding: 1rem;
-  background-color: var(--secondaryBackground);
+  background-color: var(--secondaryBg);
 }
 
 .sectionTitle {
-  color: var(--secondaryTextDark);
+  color: var(--secondaryDark);
   font-weight: 500;
   font-size: 1.8rem;
   padding-top: 1rem;
@@ -21,7 +21,7 @@
   align-items: center;
   height: auto;
   padding: 1rem;
-  background-color: var(--secondaryBackground);
+  background-color: var(--secondaryBg);
 }
 
 .card {
@@ -30,11 +30,11 @@
   align-items: center;
   padding: 1rem;
   margin: 2rem;
-  color: var(--primaryText);
+  color: var(--primary);
   text-align: center;
   width: 12rem;
   border-radius: 0.5rem 0.5rem 0rem 0.5rem;
-  background-color: var(--secondaryTextDark);
+  background-color: var(--secondaryDark);
 }
 
 .cardTitle {

@@ -7,7 +7,7 @@
   height: auto;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  background-color: var(--secondaryBackground);
+  background-color: var(--secondaryBg);
 }
 
 .horizontalContainer {
@@ -32,7 +32,7 @@
   font-size: 1.8rem;
   font-weight: normal;
   text-align: center;
-  color: var(--secondaryTextDark);
+  color: var(--secondaryDark);
   width: 60%;
 }
 
@@ -40,12 +40,12 @@
   margin-top: 1rem;
   padding-bottom: 1rem;
   width: 40%;
-  border-top: 1px solid var(--secondaryTextDark);
+  border-top: 1px solid var(--secondaryDark);
 }
 
 .welcomeText {
   font-size: large;
-  color: var(--secondaryTextDark);
+  color: var(--secondaryDark);
   width: 60%;
   text-align: center;
   line-height: 1.8rem;

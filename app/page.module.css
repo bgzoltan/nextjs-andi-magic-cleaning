@@ -2,8 +2,8 @@
   display:flex;
   align-items: center;
   justify-items: center;
-  color: var(--secondaryText);
-  background-color: var(--secondaryBackground);
+  color: var(--secondary);
+  background-color: var(--secondaryBg);
 }
 
 .main {

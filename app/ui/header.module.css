@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 2fr;
   width: 100%;
   height: 15rem;
-  background-color: var(--primaryBackgroundDark);
+  background-color: var(--primaryBgDark);
 }
 
 .horizontalContainer {
@@ -27,23 +27,23 @@
 .title {
   font-size: 2.5rem;
   text-align: center;
-  color: var(--primaryText);
-  text-shadow: 2px 2px 2px var(--secondaryTextDark);
+  color: var(--primary);
+  text-shadow: 2px 2px 2px var(--secondaryDark);
 }
 
 .subTitle {
   font-size: 2.5rem;
-  color: var(--highlightedText);
+  color: var(--highLighted);
   text-align: center;
-  text-shadow: 2px 2px 2px var(--secondaryTextDark);
+  text-shadow: 2px 2px 2px var(--secondaryDark);
 }
 
 .phone {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--highlightedText);
-  text-shadow: 2px 2px 2px var(--secondaryTextDark);
+  color: var(--highLighted);
+  text-shadow: 2px 2px 2px var(--secondaryDark);
   font-size: 2rem;
   padding-right: 3rem;
   width: 70%;
@@ -51,7 +51,7 @@
 
 .phoneIcon {
   padding-right: 0.5rem;
-  filter: drop-shadow(2px 2px 1px var(--secondaryTextDark));
+  filter: drop-shadow(2px 2px 1px var(--secondaryDark));
 }
 
 .largeScreen {

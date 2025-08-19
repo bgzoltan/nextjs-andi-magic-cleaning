@@ -1,5 +1,6 @@
 import style from "./footer.module.css";
 import { FiPhone, FiMail } from "react-icons/fi";
+import { FaRegCopyright } from "react-icons/fa";
 import Link from "next/link";
 import { rubikGlitchFont, rudaFont } from "../layout";
 
@@ -12,33 +13,39 @@ export const Footer = () => {
             className={`${style.verticalContainer} ${rubikGlitchFont.className}`}
           >
             <div
-              className={`${style.horizontalContainer} ${style.highlightedText}`}
+              className={`${style.horizontalContainer} ${style.highLighted}`}
             >
               Professional Cleaning Services &nbsp;
-              <span className={style.text}>on the Gold Coast</span>
+              <span className={style.textPlace}>on the Gold Coast</span>
             </div>
 
-            <div
-              className={`${style.horizontalContainer} ${style.textAndIconsContainer} ${rubikGlitchFont.className}`}
-            >
-              <div></div>
-              <div className={style.iconsContainer}>
-                <div className={style.icon}>
-                  <FiMail size={24} />
-                </div>
+            <div className={style.horizontalContainer}>
+              <div className={style.icon}>
+                <FiMail size={24} />
+              </div>
+              <p className={` ${style.contactDetails} ${rudaFont.className}`}>
                 magicandi@gmail.com
+              </p>
+        
+              <div className={style.icon}>
+                <FiPhone size={24} />
               </div>
-              <div className={style.iconsContainer}>
-                <div className={style.icon}>
-                  <FiPhone size={24} />
-                </div>
+              <p className={` ${style.contactDetails} ${rudaFont.className}`}>
                 +61 481 764 707
-              </div>
-              <div></div>
+              </p>
             </div>
-            <div className={` ${style.copyright} ${rudaFont.className}`}>
-              Copyright: Zoltan Bagdany, frontend developer 2025
+            <div className={style.horizontalContainer}>
+              <p className={style.icon}>
+                <FaRegCopyright size={16} />
+              </p>
+              <p className={` ${style.contactDeveloper} ${rudaFont.className}`}>
+                Zoltan Bagdany, fullstack developer, bgzoltab@gmail.com
+              </p>
             </div>
+        
+            <p className={` ${style.contactDeveloper} ${rudaFont.className}`}>
+              NextJs 18.0, TypeScript, MongoDb 2025
+            </p>
           </div>
         </div>
       </section>
@@ -49,27 +56,42 @@ export const Footer = () => {
             className={`${style.verticalContainer} ${rubikGlitchFont.className}`}
           >
             <span
-              className={`${style.horizontalContainer} ${style.highlightedText}`}
+              className={`${style.horizontalContainer} ${style.highLighted}`}
             >
               Professional Cleaning Services
             </span>
-            <span className={style.text}>on the Gold Coast</span>
+            <span className={style.textPlace}>on the Gold Coast</span>
 
             <div className={style.horizontalContainer}>
               <div className={style.icon}>
                 <FiMail size={24} />
               </div>
-              magicandi@gmail.com
+              <p className={` ${style.contactDetails} ${rudaFont.className}`}>
+                magicandi@gmail.com
+              </p>
             </div>
             <div className={style.horizontalContainer}>
               <div className={style.icon}>
                 <FiPhone size={24} />
               </div>
-              +61 481 764 707
+              <p className={` ${style.contactDetails} ${rudaFont.className}`}>
+                +61 481 764 707
+              </p>
             </div>
-            <div className={` ${style.copyright} ${rudaFont.className}`}>
-              Copyright: Zoltan Bagdany, frontend developer 2025
+            <div className={style.horizontalContainer}>
+              <p className={style.icon}>
+                <FaRegCopyright size={16} />
+              </p>
+              <p className={` ${style.contactDeveloper} ${rudaFont.className}`}>
+                Zoltan Bagdany, fullstack developer
+              </p>
             </div>
+            <p className={` ${style.contactDeveloper} ${rudaFont.className}`}>
+              bgzoltab@gmail.com
+            </p>
+            <p className={` ${style.contactDeveloper} ${rudaFont.className}`}>
+              NextJs 18.0, TypeScript, MongoDb 2025
+            </p>
           </div>
         </div>
       </section>
