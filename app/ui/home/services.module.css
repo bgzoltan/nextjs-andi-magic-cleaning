@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondaryBgDark);
+  background-color: var(--secondaryBgLight);
   padding: 1rem 1rem 2rem 1rem;
 }
 

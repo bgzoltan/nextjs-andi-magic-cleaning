@@ -9,10 +9,37 @@
 }
 
 .card {
-  text-align: center;
-  width: 15rem;
-  height: 20rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
   padding: 1rem;
+  margin: 2rem;
+  color: var(--secondaryDark);
+  text-align: center;
+  width: 12rem;
+  height: 20rem;
   border-radius: 0.5rem 0.5rem 0rem 0.5rem;
-  background-color: var(--primaryBgDark);
+  background-color: var(--secondaryBgLight);
+}
+
+.cardTitle {
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  font-weight: normal;
+}
+
+.cardText .serviceType {
+  width: 100%;
+  font-size: middle;
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--secondaryDark);
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.stars {
+  color: var(--secondaryDark);
 }

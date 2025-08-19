@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: var(--primary);
+  background-color: var(--secondaryDark);
+  width: 100%;
+}
+
+.description {
+  width: 80%;
+  padding: 1rem;
+}
+
+.decoration {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  width: 40%;
+  border-top: 1px solid var(--primary);
+}

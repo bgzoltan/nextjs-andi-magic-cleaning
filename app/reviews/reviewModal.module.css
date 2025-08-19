@@ -1,0 +1,82 @@
+.container {
+  position: fixed;
+  left: calc(50% - 20rem);
+  top: calc(50% - 10rem);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--primary);
+  width: 40rem;
+  height: auto;
+  background-color: var(--secondaryDark);
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--secondaryDark);
+  text-align: center;
+  width: 90%;
+  height: 20rem;
+  border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+  background-color: var(--secondaryBgLight);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  font-weight: normal;
+}
+
+.cardText .serviceType {
+  width: 100%;
+  font-size: middle;
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--secondaryDark);
+}
+
+.icon {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  right: 2rem;
+  width: auto;
+  color: var(--primary);
+  border: none;
+  background-color: var(--secondaryDark);
+}
+
+.stars {
+  color: var(--secondaryDark);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    left: 0rem;
+  }
+}

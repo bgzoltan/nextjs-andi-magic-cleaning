@@ -34,7 +34,7 @@
   width: 12rem;
   height: 20rem;
   border-radius: 0.5rem 0.5rem 0rem 0.5rem;
-  background-color: var(--secondaryBgDark);
+  background-color: var(--secondaryBgLight);
 }
 
 .cardTitle {
