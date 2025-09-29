@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 import style from "./reviews.module.css";
 import ReviewModal from "./reviewModal";
 import { useState } from "react";
+import { useReview } from "../globalStates/selectedReview";
 
 export interface ReviewItemI {
   review: ReviewI;
@@ -17,8 +18,9 @@ export default function ReviewItem({
   rudaFont,
 }: ReviewItemI) {
   const [isModal, setIsModal] = useState(false);
-
+  const { selectedReview, setSelectedReview } = useReview();
   const handleClick = () => {
+    setSelectedReview(review);
     setIsModal(isModal ? false : true);
   };
 
@@ -32,18 +34,24 @@ export default function ReviewItem({
           <b>{`${review.serviceType} CLEANING`}</b>
         </div>
         <div className={`${style.serviceType}  `}>
-          {new Array(review.evaluation).fill(
-            <FaStar size="18" className={style.stars} />
-          )}
+          {Array.from({ length: review.evaluation }, (_, i) => (
+            <FaStar key={i} size={18} className={style.stars} />
+          ))}
         </div>
         <div className={style.cardText}>{review.shortDescription}</div>
         <div className={style.buttonContainer}>
-          <button onClick={handleClick} className={`primaryButton ${rudaFont.className}`}>
+          <button
+            onClick={handleClick}
+            className={`primaryButton ${rudaFont.className}`}
+          >
             {review.button}
           </button>
         </div>
       </div>
-      {isModal && <ReviewModal review={review} handleClick={handleClick} />}
+      {isModal ||
+        (selectedReview && (
+          <ReviewModal review={selectedReview} handleClick={handleClick} />
+        ))}
     </>
   );
 }

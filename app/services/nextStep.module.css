@@ -1,0 +1,10 @@
+.iconContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconPlusMinus {
+  cursor: pointer;
+  margin: 0.5rem;
+}

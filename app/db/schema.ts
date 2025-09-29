@@ -15,24 +15,24 @@ const reviewSchema = new mongoose.Schema({
   },
   date: { type: String, required: true },
   address: { type: String, required: true },
-  shortDescription: { type: String, required: true },
-  description: {type:String},
+  shortDescription: { type: String, required: false },
+  description: { type: String },
   evaluation: { type: Number, min: 1, max: 5 },
   button: { type: String, required: true },
   link: { type: String },
 });
 
 export interface ReviewI {
-      client: string;
-      serviceType: ServiceType;
-      date: string;
-      address: string;
-      shortDescription: string;
-      description: string;
-      evaluation: number;
-      button: string;
-      link: string;
-    }
+  client: string;
+  serviceType: ServiceType;
+  date: string;
+  address: string;
+  shortDescription: string;
+  description: string;
+  evaluation: number;
+  button: string;
+  link: string;
+}
 
 export interface ReviewResponse {
   error: string | null;

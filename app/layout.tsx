@@ -3,6 +3,7 @@ import { Ruda, Rubik_Glitch } from "next/font/google";
 import "./globals.css";
 import { Header } from "./ui/header";
 import { Footer } from "./ui/footer";
+import { ReviewProvider } from "./globalStates/selectedReview";
 
 export const rudaFont = Ruda({
   subsets: ["latin"],
@@ -11,7 +12,6 @@ export const rudaFont = Ruda({
 export const rubikGlitchFont = Rubik_Glitch({
   weight: "400",
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${rudaFont.className}`}>
-        <Header />
-        {children}
-        <Footer />
+        <ReviewProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ReviewProvider>
       </body>
     </html>
   );
