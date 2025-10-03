@@ -14,11 +14,8 @@ export const BondCleaning = ({ rubikGlitchFont, rudaFont }: BondCleaningI) => {
       id="bondCleaning"
       className={`${style.container} ${rubikGlitchFont.className}`}
     >
-      <div className={`${style.descriptionContainer}`}>
-        <h1 className={style.descriptionTitle}>
-          Bond clean or lease leaving clean
-        </h1>
-        <div className={style.decoration}></div>
+      <h1 className={style.descriptionTitle}>Bond cleaning</h1>
+      <div className={style.decoration}>
         <div className={style.descriptionTextContainer}>
           <div className={`${rudaFont.className} ${style.descriptionText}`}>
             <div>
@@ -75,17 +72,17 @@ export const BondCleaning = ({ rubikGlitchFont, rudaFont }: BondCleaningI) => {
               <li>Cleaning of the garage if necessary</li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div className={`${style.imageContainer}`}>
-        <div>
-          <Image
-            src="/drawings/girl.png"
-            alt="Cleaning girl"
-            width={90}
-            height={200}
-            priority
-          />
+
+          <div className={`${style.imageContainer}`}>
+            <div className={style.imageFrame}>
+              <Image
+                className={style.imageStyle}
+                src="/images/bond.webp"
+                alt="Home kitchen"
+                fill // the image expand to fill the parent
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

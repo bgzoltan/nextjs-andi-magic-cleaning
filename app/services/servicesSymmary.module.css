@@ -16,9 +16,10 @@
 }
 
 .descriptionTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: normal;
   width: 92%;
+  padding: 1rem;
 }
 
 .decoration {

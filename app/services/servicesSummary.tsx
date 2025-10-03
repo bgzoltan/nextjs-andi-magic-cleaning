@@ -17,9 +17,9 @@ export default function ServicesSummary({
         <h1
           className={`${rubikGlitchFont.className} ${style.descriptionTitle}`}
         >
-          Our cleaning services
+          Cleaning services
         </h1>
-        <div className={style.decoration}></div>
+        {/* <div className={style.decoration}></div> */}
         <h2>Call us to 'Clean Your Living Space'</h2>
 
         <p className={style.description}>
