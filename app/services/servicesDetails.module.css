@@ -1,40 +1,23 @@
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 2rem;
-  background-color: var(--secondaryBg);
-}
-
-.descriptionContainer {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: large;
   color: var(--secondaryDark);
-  width: 70%;
+  width: 100%;
   text-align: center;
   line-height: 1.8rem;
-}
-
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
   padding: 1rem;
 }
 
 .descriptionTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: normal;
   text-align: left;
   color: var(--secondaryDark);
   width: 92%;
+  padding: 1rem;
 }
 
 .decoration {
@@ -42,29 +25,30 @@
   padding-bottom: 1rem;
   width: 95%;
   border-top: 1px solid var(--secondaryDark);
+  border-bottom: 1px solid var(--secondaryDark);
 }
 
 .descriptionTextContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 1rem;
 }
 
 .descriptionText {
   font-size: medium;
   color: var(--secondaryDark);
-  width: 50%;
+  width: 40%;
   text-align: justify;
   line-height: 1.8rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
 }
 
 .listContainer {
-  width: 50%;
-  border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+  width: 30%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   background-color: var(--secondaryBgLight);
-  padding: 1.5rem;
+  padding: 1rem;
+  margin: 1.2rem;
   text-align: left;
   font-size: medium;
   line-height: 1.5rem;
@@ -75,6 +59,27 @@
   text-align: left;
   padding-left: 2rem;
   margin: 0px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30rem;
+  padding: 1.2rem;
+}
+
+.imageFrame {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageStyle {
+  object-fit: fill;
+  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -119,6 +124,10 @@
   .list {
     font-size: 1rem;
     padding-left: 1.8rem;
+  }
+
+  .imageContainer {
+    width: 100%;
   }
 }
 

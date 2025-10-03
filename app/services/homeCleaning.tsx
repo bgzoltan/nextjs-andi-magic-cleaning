@@ -14,9 +14,8 @@ export const HomeCleaning = ({ rubikGlitchFont, rudaFont }: HomeCleaningI) => {
       id="homeCleaning"
       className={`${style.container} ${rubikGlitchFont.className}`}
     >
-      <div className={`${style.descriptionContainer}`}>
-        <h1 className={style.descriptionTitle}>Home cleaning</h1>
-        <div className={style.decoration}></div>
+      <h1 className={style.descriptionTitle}>Home cleaning</h1>
+      <div className={style.decoration}>
         <div className={style.descriptionTextContainer}>
           <div className={`${rudaFont.className} ${style.descriptionText}`}>
             <div>
@@ -49,6 +48,7 @@ export const HomeCleaning = ({ rubikGlitchFont, rudaFont }: HomeCleaningI) => {
               <NextStep />
             </p>
           </div>
+
           <div className={`${rudaFont.className} ${style.listContainer}`}>
             <b>Standard regular or occasionall clean for maintenance</b>
             <ul className={style.list}>
@@ -77,16 +77,18 @@ export const HomeCleaning = ({ rubikGlitchFont, rudaFont }: HomeCleaningI) => {
               <li>Mold removing from bathrooms, toilets, kitchen</li>
             </ul>
           </div>
+
+          <div className={`${style.imageContainer}`}>
+            <div className={style.imageFrame}>
+              <Image
+                className={style.imageStyle}
+                src="/images/homekitchen.webp"
+                alt="Home kitchen"
+                fill // the image expand to fill the parent
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={`${style.imageContainer}`}>
-        <Image
-          src="/drawings/girl.png"
-          alt="Cleaning girl"
-          width={90}
-          height={200}
-          priority
-        />
       </div>
     </section>
   );
