@@ -1,3 +1,7 @@
+.container {
+  border: 0px solid black;
+}
+
 .iconContainer {
   display: flex;
   align-items: center;

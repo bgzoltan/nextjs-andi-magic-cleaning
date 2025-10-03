@@ -12,7 +12,7 @@ export const NextStep = () => {
   return (
     <>
       {isModalOpen ? (
-        <>
+        <div className={style.container}>
           <div className={style.iconContainer}>
             <b>Our pricing and next step? </b>
             <FiMinusSquare
@@ -31,7 +31,7 @@ export const NextStep = () => {
             visit, we’ll be able to offer you a clear, tailored price.{" "}
             <b>We are confident you will be satisfied.</b>
           </p>
-        </>
+        </div>
       ) : (
         <div className={style.iconContainer}>
           <b>Our pricing and next step? </b>

@@ -11,6 +11,7 @@
   color: var(--primary);
   width: 40rem;
   height: auto;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   background-color: var(--secondaryDark);
 }
 
@@ -20,6 +21,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
   width: 100%;
 }
 
@@ -36,6 +38,7 @@
   height: 20rem;
   border-radius: 0.5rem 0.5rem 0rem 0.5rem;
   background-color: var(--secondaryBgLight);
+  font-size: large;
 }
 
 .header {
@@ -63,7 +66,7 @@
   position: absolute;
   cursor: pointer;
   top: 0px;
-  right: 2rem;
+  right: 1rem;
   width: auto;
   color: var(--primary);
   border: none;
@@ -77,6 +80,12 @@
 @media screen and (max-width: 600px) {
   .container {
     width: 100%;
+    border: 3px solid white;
+
     left: 0rem;
+  }
+
+  .title {
+    font-size: large;
   }
 }

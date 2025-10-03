@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       <ReviewSummary rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
-      <ReviewItems rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />;
+      <ReviewItems rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
     </>
   );
 }

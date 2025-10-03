@@ -14,7 +14,7 @@ export const QualityFeature = () => {
     "High quality":
       "Our customers love the thoroughness of our cleaning team, often praising their attention to detail and the fact that we leave homes spotlessly clean.",
     "Professional stuff":
-      "Our customers consistently describe our cleaners as friendly,punctual, and respectful — making them feel comfortable and confident in our service.",
+      "Our customers consistently describe our cleaners as friendly, punctual, and respectful — making them feel comfortable and confident in our service.",
     Realibility:
       "Our team was praised for its reliable scheduling and clear communication.",
     "Value For Money":
@@ -40,16 +40,15 @@ export const QualityFeature = () => {
                   <div className={style.badgeContainer} key={feature}>
                     {feature == selectedFeature ? (
                       <>
-                        <b> {feature}</b>
                         <FiMinusSquare
                           className={style.iconPlusMinus}
                           size={30}
                           onClick={() => handleModalOpen("")}
                         />
+                        <b> {feature}</b>
                       </>
                     ) : (
                       <>
-                        {feature}
                         <FiPlusSquare
                           className={style.iconPlusMinus}
                           size={30}
@@ -57,13 +56,16 @@ export const QualityFeature = () => {
                             handleModalOpen(feature as FeatureKeys)
                           }
                         />
+                        {feature}
                       </>
                     )}
                   </div>
                 )
             )}
           </div>
-          <p>{qualityFeatures[selectedFeature]}</p>
+          <div className={style.featureContainer}>
+            {qualityFeatures[selectedFeature]}
+          </div>
         </>
       ) : (
         <div className={style.iconContainer}>
@@ -72,12 +74,12 @@ export const QualityFeature = () => {
               (feature) =>
                 feature != "" && (
                   <div className={style.badgeContainer} key={feature}>
-                    <>{feature}</>
                     <FiPlusSquare
                       className={style.iconPlusMinus}
                       size={30}
                       onClick={() => handleModalOpen(feature as FeatureKeys)}
                     />
+                    <>{feature}</>
                   </div>
                 )
             )}

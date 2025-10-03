@@ -8,9 +8,14 @@
   width: 100%;
 }
 
+.title {
+  font-size: x-large;
+}
+
 .description {
   width: 80%;
   padding: 1rem;
+  font-size: 1.1rem;
 }
 
 .decoration {
@@ -18,4 +23,14 @@
   padding-bottom: 1rem;
   width: 40%;
   border-top: 1px solid var(--primaryDark);
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8rem;
+  }
 }

@@ -23,7 +23,7 @@ export default function ReviewModal({ review, handleClick }: ReviewModalI) {
           <div className={style.header}>
             <p className={style.title}>{review.client}</p>
             <button onClick={handleClose} className={style.icon}>
-              <IoIosCloseCircleOutline size={24} />
+              <IoIosCloseCircleOutline size={34} />
             </button>
           </div>
 

@@ -14,7 +14,29 @@
   background-color: var(--secondaryDark);
 }
 
+.featureContainer {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
 .iconPlusMinus {
   cursor: pointer;
   margin: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .iconContainer {
+    flex-direction: column;
+  }
+
+  .badgeContainer {
+    width: 13rem;
+  }
+
+  .featureContainer {
+    text-align: justify;
+  }
 }
