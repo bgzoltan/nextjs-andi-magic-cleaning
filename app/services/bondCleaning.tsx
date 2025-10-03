@@ -40,9 +40,9 @@ export const BondCleaning = ({ rubikGlitchFont, rudaFont }: BondCleaningI) => {
                 </p>
               </p>
             </div>
-            <p>
+            <div>
               <NextStep />
-            </p>
+            </div>
           </div>
           <div className={`${rudaFont.className} ${style.listContainer}`}>
             <b>Bond clean when end of your lease</b>

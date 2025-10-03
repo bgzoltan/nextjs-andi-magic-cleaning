@@ -44,9 +44,9 @@ export const HomeCleaning = ({ rubikGlitchFont, rudaFont }: HomeCleaningI) => {
               all the nooks and crannies, leaving your whole home spotless and
               refreshed.
             </p>
-            <p>
+            <div>
               <NextStep />
-            </p>
+            </div>
           </div>
 
           <div className={`${rudaFont.className} ${style.listContainer}`}>

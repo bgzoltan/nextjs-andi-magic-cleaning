@@ -60,9 +60,9 @@ export const OfficeCleaning = ({
               all the nooks and crannies, leaving your whole office spotless and
               refreshed.
             </p>
-            <p>
+            <div>
               <NextStep />
-            </p>
+            </div>
           </div>
           <div className={`${rudaFont.className} ${style.listContainer}`}>
             <b>
