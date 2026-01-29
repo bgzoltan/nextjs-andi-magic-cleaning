@@ -18,28 +18,23 @@ export const BondCleaning = ({ rubikGlitchFont, rudaFont }: BondCleaningI) => {
       <div className={style.decoration}>
         <div className={style.descriptionTextContainer}>
           <div className={`${rudaFont.className} ${style.descriptionText}`}>
-            <div>
-              <b>Moving out can be stressful enough </b>{" "}
-              <p>
-                Whether you’re off to a new rental or stepping into your very
-                own home, the last thing you want is to spend hours scrubbing
-                and worrying about your bond clean. Sure, it might feel strange
-                to spend money just to get money back — but think of the time,
-                the big effort, and stress you’ll save. The easiest way to
-                secure your full bond refund? Hire a trusted cleaning team with
-                the experience and reputation to get the job done right instead
-                of you.{" "}
-              </p>
-              <p>
-                <b>Why risk paying twice? </b>{" "}
-                <p>
-                  If you skip hiring a professional cleaning team and your
-                  landlord or agent isn’t satisfied with the results, you’ll end
-                  up needing to bring in another team for a touch-up clean —
-                  which means extra cost and hassle.{" "}
-                </p>
-              </p>
-            </div>
+            <p>
+              <b>Moving out can be stressful enough </b> Whether you’re off to a
+              new rental or stepping into your very own home, the last thing you
+              want is to spend hours scrubbing and worrying about your bond
+              clean. Sure, it might feel strange to spend money just to get
+              money back — but think of the time, the big effort, and stress
+              you’ll save. The easiest way to secure your full bond refund? Hire
+              a trusted cleaning team with the experience and reputation to get
+              the job done right instead of you.
+              <br />
+              <br />
+              <b>Why risk paying twice? </b>
+              If you skip hiring a professional cleaning team and your landlord
+              or agent isn’t satisfied with the results, you’ll end up needing
+              to bring in another team for a touch-up clean — which means extra
+              cost and hassle.
+            </p>
             <div>
               <NextStep />
             </div>

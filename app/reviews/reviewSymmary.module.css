@@ -3,13 +3,16 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  color: var(--primaryDark);
-  background-color: var(--secondaryBg);
+  color: var(--primary);
+  background-color: var(--secondaryDark);
   width: 100%;
 }
 
 .title {
-  font-size: x-large;
+  font-size: 2rem;
+  font-weight: normal;
+  width: 92%;
+  padding: 1rem;
 }
 
 .description {
@@ -22,7 +25,7 @@
   margin-top: 1rem;
   padding-bottom: 1rem;
   width: 40%;
-  border-top: 1px solid var(--primaryDark);
+  border-top: 1px solid var(--primary);
 }
 
 @media screen and (max-width: 600px) {
