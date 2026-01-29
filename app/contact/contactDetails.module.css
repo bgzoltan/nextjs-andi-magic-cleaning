@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--secondaryDark);
+  width: 100%;
+  padding: 1rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  width: 100%;
+  gap: 0.3rem;
+}
+
+.fieldLabel {
+  width: 10rem;
+  text-align: right;
+  align-content: center;
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 3rem;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  font-size: medium;
+  color: var(--primaryTextColor);
+  background-color: var(--secondaryBgLight);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.5rem;
+  margin-top: 0.25rem;
+}
