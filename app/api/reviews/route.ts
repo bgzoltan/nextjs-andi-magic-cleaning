@@ -1,4 +1,4 @@
-import { dbConnect } from "./mongoose";
+import { dbConnect } from "../mongoose";
 import { Review, ReviewI } from "@/app/db/schema";
 
 export async function GET() {
@@ -11,10 +11,10 @@ export async function GET() {
     return Response.json(items);
     // return Response.json(items,{status:200,  headers: { "Content-Type": "application/json" }  });
   } catch (err: any) {
-    console.log(err)
+    console.log(err);
     return Response.json(
-      { error: err.message ? err.message:"Failed to fetch reviews" },
-      { status: err.status ? err.status:500 }
+      { error: err.message ? err.message : "Failed to fetch reviews" },
+      { status: err.status ? err.status : 500 },
     );
   }
 }

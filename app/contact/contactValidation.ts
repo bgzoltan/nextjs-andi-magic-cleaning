@@ -1,10 +1,11 @@
 import * as Yup from "yup";
+import { ServiceType } from "../db/schema";
 
 const validationSchema = Yup.object({
   firstName: Yup.string().required("Required"),
   lastName: Yup.string().required("Required"),
-  cleaningType: Yup.string()
-    .oneOf(["Home", "Office", "Bond"])
+  serviceType: Yup.string()
+    .oneOf(Object.values(ServiceType))
     .required("Required"),
   mobileNumber: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),

@@ -6,10 +6,12 @@ const cashedConnection = (global as any).mongoose || {
   promise: null,
 };
 
+// Function to connect to the MongoDB database using Mongoose
 export const dbConnect = async () => {
   const mongoURI = process.env.MONGO_URI ? process.env.MONGO_URI : "";
 
   // If connection is live return the current connection
+  // To ensure that we do not create multiple connections in a serverless environment
   if (cashedConnection.connect) return cashedConnection;
 
   if (!cashedConnection.promise) {
@@ -21,7 +23,7 @@ export const dbConnect = async () => {
       })
       .catch((err) => {
         err.message = "Failed to connect to the database.";
-        err.status=500;
+        err.status = 500;
         console.log(err.status, err.message);
         throw err;
       });

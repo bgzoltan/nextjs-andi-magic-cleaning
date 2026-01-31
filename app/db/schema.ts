@@ -1,4 +1,4 @@
-import mongoose, { models } from "mongoose";
+import mongoose from "mongoose";
 
 export enum ServiceType {
   HOME = "HOME",
@@ -40,4 +40,46 @@ export interface ReviewResponse {
   loading: boolean;
 }
 
-export const Review = models.Review || mongoose.model("Review", reviewSchema);
+// Mongoose Model for Review / It is important to ensure that the model is not redefined and not undefined, because in a serverless environment like Next.js, the code can be re-executed multiple times, leading to model redefinition errors.
+export const Review =
+  mongoose.models?.Review || mongoose.model<ReviewI>("Review", reviewSchema);
+
+export const inquirySchema = new mongoose.Schema({
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  mobileNumber: { type: String, required: true },
+  email: { type: String, required: true },
+  suburb: { type: String, required: true },
+  areaSquareMeters: { type: Number, required: true },
+  numberOfRooms: { type: Number, required: true },
+  numberOfBathrooms: { type: Number, required: true },
+  serviceType: {
+    type: String,
+    enum: Object.values(ServiceType),
+    required: true,
+  },
+  otherMessage: { type: String, required: false },
+});
+
+export interface InquiryI {
+  firstName: string;
+  lastName: string;
+  mobileNumber: string;
+  email: string;
+  suburb: string;
+  areaSquareMeters: number;
+  numberOfRooms: number;
+  numberOfBathrooms: number;
+  serviceType: ServiceType;
+  otherMessage: string;
+}
+
+export const Inquiry =
+  mongoose.models?.Inquiry ||
+  mongoose.model<InquiryI>("Inquiry", inquirySchema);
+
+export interface InquiryResponse {
+  error: string | null;
+  inquiries: InquiryI[];
+  loading: boolean;
+}
