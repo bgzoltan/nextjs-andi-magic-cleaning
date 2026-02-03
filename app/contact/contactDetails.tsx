@@ -3,7 +3,7 @@
 import { NextFont } from "next/dist/compiled/@next/font";
 import style from "./contactDetails.module.css";
 import { validationSchema } from "./contactValidation";
-import { addInquiry } from "../lib/inquiries";
+import { addInquiry, getInquiry } from "../lib/inquiries";
 import axios from "axios";
 import { ServiceType } from "../db/schema";
 
@@ -26,17 +26,35 @@ export default function ContactDetails({
 }: ContactDetailsI) {
   const handleSubmit = async (values: any) => {
     // Send the form data to the backend API
+
     try {
-      await addInquiry(values);
-      alert("Your inquiry has been submitted successfully.");
+      //  Check if an inquiry with the same email already exists
+      await getInquiry(values.email);
+      alert(
+        "You have a pending inquiry already. We will get back to you soon.",
+      );
     } catch (error: unknown) {
       // Handle error appropriately
       if (axios.isAxiosError(error)) {
-        console.error("Error submitting inquiry:", error.response?.data);
+        if (error.response && error.response.status === 404) {
+          // If inquiry not found, proceed to add a new inquiry
+          try {
+            await addInquiry(values);
+            alert("Your inquiry has been submitted successfully!");
+          } catch (addError) {
+            console.error("Error adding inquiry:", addError);
+            alert(
+              "There was an error submitting your inquiry. Please try again.",
+            );
+          }
+        } else {
+          console.error("Error fetching inquiry:", error.response?.data);
+          alert("Something went wrong. Please try again.");
+        }
       } else {
-        console.error("Unexpected error submitting inquiry:", error);
+        console.error("Unexpected error:", error);
+        alert("Something went wrong. Please try again.");
       }
-      alert("There was an error submitting your inquiry. Please try again.");
     }
   };
 
