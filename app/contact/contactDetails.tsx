@@ -78,46 +78,59 @@ export default function ContactDetails({
                       <label className={style.fieldLabel}>
                         {formLabels[field].label}
                       </label>
-
-                      {field === "serviceType" && (
-                        <Field name={field} as="select" className={style.field}>
-                          <option value={ServiceType.HOME} defaultChecked>
-                            Home
-                          </option>
-                          <option value={ServiceType.OFFICE}>Office</option>
-                          <option value={ServiceType.BOND}>Bond</option>
-                        </Field>
-                      )}
-                      {field === "otherMessage" && (
-                        <Field
-                          name={field}
-                          as="textarea"
-                          className={style.field}
-                        />
-                      )}
-                      {["empty1", "empty2"].includes(field) && <div />}
-                      {[
-                        "serviceType",
-                        "otherMessage",
-                        "empty1",
-                        "empty2",
-                      ].includes(field) === false && (
-                        <Field
-                          name={field}
-                          type={formLabels[field].type}
-                          as="input"
-                          className={style.field}
-                        />
-                      )}
+                      {/* To fix height of the field in order not to shift the label up or down when error is displayed  */}
+                      <div
+                        className={
+                          field === "otherMessage"
+                            ? style.inputFieldContainerOtherMessage
+                            : style.inputFieldContainer
+                        }
+                      >
+                        {field === "serviceType" && (
+                          <Field
+                            name={field}
+                            as="select"
+                            className={style.field}
+                          >
+                            <option value={ServiceType.HOME} defaultChecked>
+                              Home
+                            </option>
+                            <option value={ServiceType.OFFICE}>Office</option>
+                            <option value={ServiceType.BOND}>Bond</option>
+                          </Field>
+                        )}
+                        {field === "otherMessage" && (
+                          <Field
+                            name={field}
+                            as="textarea"
+                            className={style.field}
+                          />
+                        )}
+                        {["empty1", "empty2"].includes(field) && <div />}
+                        {[
+                          "serviceType",
+                          "otherMessage",
+                          "empty1",
+                          "empty2",
+                        ].includes(field) === false && (
+                          <Field
+                            name={field}
+                            type={formLabels[field].type}
+                            as="input"
+                            className={style.field}
+                          />
+                        )}
+                        {/* Display error message below the input field */}
+                        {errors && touched && (
+                          <ErrorMessage
+                            name={field}
+                            component="div"
+                            className={style.errorMessage}
+                          />
+                        )}
+                      </div>
                     </>
                   </div>
-                  {errors && touched && (
-                    <ErrorMessage
-                      name={field}
-                      component="div"
-                      className={style.errorMessage}
-                    />
-                  )}
                 </div>
               ))}
 
