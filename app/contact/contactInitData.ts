@@ -20,7 +20,7 @@ const formValues = {
   email: "",
   suburb: "",
   empty1: "",
-  serviceType: "",
+  serviceType: "HOME",
   areaSquareMeters: "",
   numberOfRooms: "",
   numberOfBathrooms: "",
