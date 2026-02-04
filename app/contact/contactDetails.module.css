@@ -9,6 +9,16 @@
   padding: 1rem;
 }
 
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 1rem;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;

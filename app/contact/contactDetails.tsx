@@ -69,7 +69,7 @@ export default function ContactDetails({
         onSubmit={handleSubmit}
       >
         {({ touched, errors }) => (
-          <Form>
+          <Form className={style.formContainer}>
             <div className={style.gridContainer}>
               {Object.keys(formValues).map((field) => (
                 <div key={field} className={style.inputArea}>
@@ -133,11 +133,10 @@ export default function ContactDetails({
                   </div>
                 </div>
               ))}
-
-              <button type="submit" className="primaryButton">
-                Submit
-              </button>
             </div>
+            <button type="submit" className="primaryButton">
+              Send the form
+            </button>
           </Form>
         )}
       </Formik>

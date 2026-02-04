@@ -47,12 +47,13 @@ a {
 .primaryButton {
   color: var(--primary);
   background-color: var(--secondaryDark);
-  padding: 0.5rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   margin: 0.5rem;
   border: 1px solid var(--primary);
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   font-size: medium;
   cursor: pointer;
+  width: fit-content;
 }
 
 .primaryButton:hover {
