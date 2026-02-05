@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Ruda, Rubik_Glitch } from "next/font/google";
 import "./globals.css";
-import { Header } from "./ui/header";
-import { Footer } from "./ui/footer";
-import { ReviewProvider } from "./globalStates/selectedReview";
+import { Header } from "../components/layout/header";
+import { Footer } from "../components/layout/footer";
+import { ReviewProvider } from "../context/selectedReviewContext";
 
 export const rudaFont = Ruda({
   subsets: ["latin"],
