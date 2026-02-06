@@ -25,30 +25,38 @@ export const AboutDetails = ({ rubikGlitchFont, rudaFont }: AboutDetailsI) => {
           </div>
         </div>
         <div className={`${rudaFont.className} ${style.description}`}>
+          <h2 className={style.subTitle}>Our Story</h2>
           <p>
-            Originally from Hungary, I’ve been living in this beautiful country
-            for over ten years. For the past eight years, I’ve been providing
-            professional cleaning services, gaining experience and the trust of
-            many satisfied clients. Over time, my business has grown thanks to
-            their support. I’m proud of what we’ve accomplished so far, and my
-            dedicated team shares in this pride. Of course, our success is made
-            possible by our clients, who trust us with their homes and
-            businesses, and allow us to care for their valuable spaces. <br />
-            Our experience guarantees thorough, high-quality cleaning, tailored
-            to your satisfaction. We use environmentally friendly products, so
-            while your property shines, we also help preserve the natural beauty
-            of our planet for future generations.
+            Originally from Hungary, I’ve been living in Gold Coast for over ten
+            years. For the past eight years, I’ve been providing{" "}
+            <b>professional home, office, and bond cleaning services</b>,
+            gaining experience and the trust of many satisfied clients. Thanks
+            to their support, our business has grown steadily over time.
+          </p>
+
+          <h2 className={style.subTitle}>Our Values</h2>
+          <p>
+            At Magic Andi Cleaning, we pride ourselves on delivering{" "}
+            <b>high-quality cleaning services</b> tailored to your satisfaction.
+            We use environmentally friendly products to ensure your space shines
+            while helping preserve the planet. Our dedicated team is committed
+            to reliability, professionalism, and customer satisfaction.
+          </p>
+
+          <h2 className={style.subTitle}>Meet the Owner</h2>
+          <p>
+            I’m Andrea K., the owner of Magic Andi Cleaning. Our clients trust
+            us with their homes and businesses, and we work diligently to
+            maintain that trust. Feel free to reach out — we promise you’ll be
+            delighted with the results!
+          </p>
+
+          <p>
             <br />
             <br />
-            Feel free to reach out—trust us, and we promise you’ll be delighted
-            with the results!
+            <b>Andrea K.</b>
             <br />
-            <br />
-            <b>Andrea K. Owner</b>
-            <br />
-            Andi Magic Cleaning
-            <br />
-            <br />
+            Owner, Magic Andi Cleaning
           </p>
         </div>
       </div>

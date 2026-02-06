@@ -31,7 +31,7 @@ export const Footer = () => {
                 <FiPhone size={24} />
               </div>
               <p className={` ${style.contactDetails} ${rudaFont.className}`}>
-                +61 481 764 707
+                +61 481 764 xxx
               </p>
             </div>
             <div className={style.horizontalContainer}>
@@ -75,7 +75,7 @@ export const Footer = () => {
                 <FiPhone size={24} />
               </div>
               <p className={` ${style.contactDetails} ${rudaFont.className}`}>
-                +61 481 764 707
+                +61 481 764 xxx
               </p>
             </div>
             <div className={style.horizontalContainer}>

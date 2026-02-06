@@ -30,7 +30,7 @@ export const Header = () => {
               <div className={style.phoneIcon}>
                 <FiPhone size={24} />
               </div>
-              +61-481-764-707
+              +61-481-764-xxx
             </div>
             <Navigation />
           </div>

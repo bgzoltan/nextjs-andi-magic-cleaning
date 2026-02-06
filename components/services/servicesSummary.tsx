@@ -12,14 +12,13 @@ export default function ServicesSummary({
   rudaFont,
 }: ServicesSummaryI) {
   return (
-    <>
+    <section>
       <div className={`${style.container} ${rudaFont.className}`}>
         <h1
           className={`${rubikGlitchFont.className} ${style.descriptionTitle}`}
         >
           Cleaning services
         </h1>
-        {/* <div className={style.decoration}></div> */}
         <h2>Call us to 'Clean Your Living Space'</h2>
 
         <p className={style.description}>
@@ -45,6 +44,6 @@ export default function ServicesSummary({
           fresh, healthy, and welcoming.
         </p>
       </div>
-    </>
+    </section>
   );
 }

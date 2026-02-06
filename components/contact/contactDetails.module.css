@@ -18,6 +18,13 @@
   gap: 1rem;
 }
 
+.formText {
+  width: 80%;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--secondaryDark);
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;

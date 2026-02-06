@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 30rem;
+  /* height: 30rem; */
   /* padding-top: 2rem;
   padding-bottom: 1rem; */
 }
@@ -21,7 +21,7 @@
 
 .imageContainer {
   width: 70%;
-  height: 100%;
+  height: 34rem;
   background-image: url("../../public/images/goldcoast.webp");
   background-repeat: no-repeat;
   background-size: cover;

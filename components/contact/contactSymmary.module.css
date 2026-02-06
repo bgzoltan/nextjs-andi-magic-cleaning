@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: var(--primary);
+  background-color: var(--secondaryDark);
+  width: 100%;
+}
+
+.descriptionTitle {
+  font-size: 2rem;
+  font-weight: normal;
+  width: 92%;
+  padding: 1rem;
+}
+
+.description {
+  width: 80%;
+  padding: 1rem;
+  font-size: large;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .descriptionTitle {
+    font-size: 1.5rem;
+  }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600) and (max-width: 1024px) {
+  .descriptionTitle {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    width: 100%;
+    padding: 3rem;
+    font-size: 1.4rem;
+  }
+}

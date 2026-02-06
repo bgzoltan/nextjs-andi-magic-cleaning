@@ -12,12 +12,14 @@ export default function ReviewSummary({
   rudaFont,
 }: ReviewSummaryI) {
   return (
-    <>
+    <section>
       <div className={`${style.container} ${rudaFont.className}`}>
         <h1 className={`${rubikGlitchFont.className} ${style.title}`}>
-          Customers say
+          Customer Reviews & Testimonials
         </h1>
-        <div className={style.decoration}></div>
+        <h2>
+          <b>See what our clients say in the Gold Coast</b>
+        </h2>
         <p className={style.description}>
           Our customers feedback paints a clear picture: a trustworthy, highly
           competent cleaning service that delivers on its promises — leading to
@@ -25,6 +27,6 @@ export default function ReviewSummary({
         </p>
         <QualityFeature />
       </div>
-    </>
+    </section>
   );
 }

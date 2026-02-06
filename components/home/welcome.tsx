@@ -5,8 +5,9 @@ export const WelcomeSection = () => {
   return (
     <section className={`${style.container} ${rubikGlitchFont.className}`}>
       <div className={style.textContainer}>
-        <h1 className={style.sectionTitle}>Cleaning services</h1>
-        <div className={style.decoration}></div>
+        <h1 className={style.sectionTitle}>
+          Cleaning services in the Gold Coast
+        </h1>
         <p className={`${rudaFont.className} ${style.welcomeText}`}>
           With my reliable, permanent team, I offer you a professional service
           for{" "}

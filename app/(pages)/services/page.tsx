@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 
 export default function Services() {
   return (
-    <>
+    <main>
       <ServicesSummary rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
       <HomeCleaning rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
       <OfficeCleaning rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
       <BondCleaning rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
-    </>
+    </main>
   );
 }

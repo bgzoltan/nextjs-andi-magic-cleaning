@@ -63,6 +63,12 @@ export default function ContactDetails({
       id="contactUs"
       className={`${style.container} ${rudaFont.className}`}
     >
+      <h2>Get in Touch</h2>
+      <p className={style.formText}>
+        You can reach us by phone, email (below), or by filling out the contact
+        form. We pride ourselves on fast, reliable responses and excellent
+        customer service.
+      </p>
       <Formik
         initialValues={formValues}
         validationSchema={validationSchema}
@@ -135,7 +141,7 @@ export default function ContactDetails({
               ))}
             </div>
             <button type="submit" className="primaryButton">
-              Send the form
+              SEND FORM
             </button>
           </Form>
         )}

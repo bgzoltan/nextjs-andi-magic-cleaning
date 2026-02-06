@@ -47,6 +47,7 @@ a {
 }
 
 .primaryButton {
+  display: block;
   color: var(--primary);
   background-color: var(--secondaryDark);
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;

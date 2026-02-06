@@ -17,9 +17,18 @@
   width: 100%;
 }
 
+.subTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primaryDark);
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+
 .description {
   width: 70%;
-  padding: 5rem;
+  padding: 1rem;
   font-size: large;
   color: var(--secondaryDark);
   text-align: justify;

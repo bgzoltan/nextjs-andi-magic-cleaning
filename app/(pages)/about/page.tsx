@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function AboutUs() {
   return (
-    <>
+    <main>
       <AboutSummary rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
       <AboutDetails rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
-    </>
+    </main>
   );
 }

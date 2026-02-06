@@ -1,3 +1,4 @@
+import ContactSummary from "@/components/contact/contactSummary";
 import ContactDetails from "../../../components/contact/contactDetails";
 import { rubikGlitchFont, rudaFont } from "../../layout";
 import type { Metadata } from "next";
@@ -11,8 +12,9 @@ export const metadata: Metadata = {
 
 export default async function ContactUs() {
   return (
-    <>
+    <main>
+      <ContactSummary rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
       <ContactDetails rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
-    </>
+    </main>
   );
 }

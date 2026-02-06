@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
+    <main>
       <ReviewSummary rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
       <ReviewItems rubikGlitchFont={rubikGlitchFont} rudaFont={rudaFont} />
-    </>
+    </main>
   );
 }

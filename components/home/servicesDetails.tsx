@@ -38,12 +38,14 @@ export const ServicesDetailsSection = () => {
               {service.name}
             </div>
             <div className={style.cardText}>{service.description}</div>
-            <Link
-              href={service.link}
-              className={`primaryButton ${rudaFont.className}`}
-            >
-              {service.button}
-            </Link>
+            <div className={style.buttonContainer}>
+              <Link
+                href={service.link}
+                className={`primaryButton ${rudaFont.className} `}
+              >
+                {service.button}
+              </Link>
+            </div>
           </div>
         ))}
       </div>
