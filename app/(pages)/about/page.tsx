@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Abous Us",
   description:
     "Meet the team behind Magic Andi Cleaning! Discover why we're the trusted choice for reliable home cleaning in the Gold Coast, Australia. Read our mission & book today!",
+  alternates: {
+    canonical: "https://magicandicleaning.com/about",
+  },
 };
 
 export default function AboutUs() {

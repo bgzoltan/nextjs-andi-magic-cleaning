@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Magic Andi Cleaning provides professional home, office, and end-of-lease bond cleaning services in Gold Coast, Australia. Reliable, trusted, and quality cleaning for every space. Book your cleaning today and experience the Magic Andi difference!",
+  alternates: {
+    canonical: "https://magicandicleaning.com/services",
+  },
 };
 
 export default function Services() {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with Magic Andi Cleaning for home, office, or bond cleaning services in Gold Coast. Contact us today for a free quote or booking.",
+  alternates: {
+    canonical: "https://magicandicleaning.com/contact",
+  },
 };
 
 export default async function ContactUs() {

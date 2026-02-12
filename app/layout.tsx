@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
   description:
     "Professional Home and Office Cleaning Services in Gold Coast, Australia. Book Your Cleaning Today!",
+  alternates: {
+    canonical: "https://magicandicleaning.com",
+  },
 };
 
 // Root Layout pattern> This layout will be used in all pages

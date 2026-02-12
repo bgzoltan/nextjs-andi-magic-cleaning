@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Reviews",
   description:
     "Read real customer reviews of Magic Andi Cleaning. Discover why homeowners and businesses in Gold Coast trust us for professional home and office cleaning services. Book your cleaning today and experience the Magic Andi difference!",
+  alternates: {
+    canonical: "https://magicandicleaning.com/reviews",
+  },
 };
 
 export default function Page() {
