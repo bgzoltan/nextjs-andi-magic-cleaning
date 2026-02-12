@@ -73,7 +73,7 @@ export const BondCleaning = ({ rubikGlitchFont, rudaFont }: BondCleaningI) => {
               <Image
                 className={style.imageStyle}
                 src="/images/bond.webp"
-                alt="Home kitchen"
+                alt="Magic Andi Cleaning - cleaned kitchen image in services page"
                 fill // the image expand to fill the parent
               />
             </div>

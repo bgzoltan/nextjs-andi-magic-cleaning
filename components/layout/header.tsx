@@ -13,7 +13,7 @@ export const Header = () => {
           <div className={style.horizontalContainer}>
             <Image
               src="/drawings/girl.png"
-              alt="Cleaning girl"
+              alt="Magic Andi Cleaning - cleaning girl in head"
               width={90}
               height={200}
               priority

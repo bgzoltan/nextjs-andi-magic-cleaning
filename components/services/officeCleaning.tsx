@@ -25,7 +25,7 @@ export const OfficeCleaning = ({
               <Image
                 className={style.imageStyle}
                 src="/images/office.webp"
-                alt="Home kitchen"
+                alt="Magic Andi cleaning - cleaned office image in services page"
                 fill // the image expand to fill the parent
               />
             </div>

@@ -19,7 +19,7 @@ export const AboutDetails = ({ rubikGlitchFont, rudaFont }: AboutDetailsI) => {
             <Image
               className={style.imageStyle}
               src="/images/about.webp"
-              alt="About us image"
+              alt="Magic Andi Cleaning - about us image in aboutus page"
               fill
             />
           </div>

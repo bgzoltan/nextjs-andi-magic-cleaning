@@ -83,7 +83,7 @@ export const HomeCleaning = ({ rubikGlitchFont, rudaFont }: HomeCleaningI) => {
               <Image
                 className={style.imageStyle}
                 src="/images/homekitchen.webp"
-                alt="Home kitchen"
+                alt="Magic Andi Cleaning - cleaned apartment image in services page"
                 fill // the image expand to fill the parent
               />
             </div>
